@@ -39,6 +39,6 @@ public class Volontario implements TurnoLavoro {
 
     @Override
     public void checkIn() {
-        System.out.println("Il volontario ha iniziato il proprio turno");
+        System.out.println("Il volontario " + this.nome + " ha iniziato il proprio turno");
     }
 }

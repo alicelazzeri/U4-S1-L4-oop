@@ -57,5 +57,13 @@ public class Main {
 
         Dipendente dipendente = new DipendentePartTime(729, 1477.65, Dipartimento.VENDITE);
         Volontario volontario = new Volontario("Alice Lazzeri", 29, "Laureata in Lingue e Letterature Straniere");
+        Object[] dipendentiEVolontari = {dipendente, volontario};
+        if (dipendente instanceof TurnoLavoro) {
+            ((TurnoLavoro) dipendente).checkIn();
+        }
+        if (volontario instanceof TurnoLavoro) {
+            ((TurnoLavoro) volontario).checkIn();
+
+    }
     }
 }

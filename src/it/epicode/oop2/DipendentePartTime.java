@@ -9,4 +9,8 @@ public class DipendentePartTime extends Dipendente {
     public double calculateSalary() {
         return getStipendioMensile();
     }
+    public void checkIn() {
+        System.out.println("Il dipendente con matricola " + getMatricola() + " ha iniziato il proprio turno");
+    }
+
 }
